@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tử Vi Mộc An</title>
+    <!-- FontAwesome cho Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="tuvi.css">
+</head>
+<body>
+
+    <!-- Hiệu ứng sao trời -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <!-- Phần HOME -->
+        <div id="home" class="section-block">
+            <!-- Avatar / Logo -->
+            <div class="avatar-wrapper">
+                <img src="avata.jpg" alt="Tử Vi Mộc An" class="avatar">
+            </div>
+
+            <!-- Tiêu đề & Thông tin -->
+            <h1 class="name">Tử Vi Mộc An</h1>
+            <p class="role">Định hướng vận mệnh & Cuộc sống</p>
+            <p class="bio">"Hiểu rõ lá số, chủ động nắm bắt cơ hội."</p>
+
+            <div class="tuvi-card">
+                <h2>🌸 CHÀO CÁC BẠN YÊU THÍCH TỬ VI! 🌸</h2>
+                <p class="intro-text">
+                    Tử Vi không chỉ là bộ môn huyền học giúp dự đoán vận mệnh, mà còn là kim chỉ nam giúp mỗi người định hướng rõ ràng hơn về cuộc sống, công việc, tài lộc, tình duyên và sức khỏe.
+                </p>
+            </div>
+        </div>
+
+        <!-- Phần THÔNG TIN CẦN CUNG CẤP -->
+        <div id="thongtin" class="section-block">
+            <div class="tuvi-card">
+                <div class="info-box" style="margin-bottom: 0;">
+                    <h3>📌 THÔNG TIN CẦN CUNG CẤP KHI XEM:</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Họ và tên</li>
+                        <li><i class="fa-solid fa-check"></i> Giới tính</li>
+                        <li><i class="fa-solid fa-check"></i> Ngày, tháng, năm sinh (Dương lịch hoặc Âm lịch)</li>
+                        <li><i class="fa-solid fa-check"></i> Giờ sinh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần CÁC HÌNH THỨC LUẬN GIẢI -->
+        <div id="hinhthuc" class="section-block">
+            <div class="tuvi-card">
+                <div class="services-box">
+                    <h3>🔮 CÁC HÌNH THỨC LUẬN GIẢI</h3>
+                    
+                    <div class="service-item">
+                        <span class="service-name">🌿 Xem vận hạn chi tiết trong năm</span>
+                        <span class="service-price">300.000 VNĐ</span>
+                        <p class="service-desc">Dự đoán các giai đoạn quan trọng trong năm, giúp có kế hoạch phù hợp để tận dụng cơ hội và hạn chế rủi ro.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <span class="service-name">🌿 Luận giải qua cuộc gọi hoặc ghi âm (30' - 90')</span>
+                        <span class="service-price">500.000 VNĐ</span>
+                        <p class="service-desc">Tư vấn trực tiếp, giải đáp các vấn đề quan tâm về vận trình, hướng đi trong công việc, tài chính và cuộc sống.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <span class="service-name">🌿 Luận giải chi tiết qua văn bản</span>
+                        <span class="service-price">1.500.000 VNĐ</span>
+                        <p class="service-desc">Phân tích sâu về lá số tử vi, bao gôm công danh, tài lộc, tình duyên, sức khỏe và vận hạn trong năm. Hình thức này phù hợp với những ai muốn có tài liệu tham khảo lâu dài.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phần LIÊN HỆ -->
+<div id="lienhe" class="section-block">
+    <div class="tuvi-card" style="text-align: center;">
+        <h3>📩 THÔNG TIN LIÊN HỆ</h3>
+        <p class="intro-text" style="text-align: center; margin-top: 10px;">
+            Inbox trực tiếp qua Fanpage hoặc Zalo để đăng ký xem lá số tử vi ngay hôm nay!
+        </p>
+        <!-- Thay đổi tag <a> thành nút mở Popup -->
+        <button onclick="openContactModal()" class="contact-btn">
+            Liên hệ ngay
+        </button>
+    </div>
+</div>
+
+<!-- Modal Popup Contact -->
+<div id="contactModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeContactModal()">&times;</span>
+        <h3>CHỌN KÊNH LIÊN HỆ</h3>
+        <p>Vui lòng chọn hình thức bạn muốn kết nối:</p>
+        <div class="modal-buttons">
+            <a href="https://www.facebook.com/share/1d4p4mTZ9r/?mibextid=wwXIfr" target="_blank" class="contact-option-btn fb-btn">
+                📩 Nhắn qua Fanpage
+            </a>
+            <a href="https://zalo.me/0347576096" target="_blank" class="contact-option-btn zalo-btn">
+                💬 Nhắn qua Zalo
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!-- Thanh điều hướng đáy -->
+    <nav class="bottom-nav">
+        <a href="#home" class="nav-item"><i class="fa-solid fa-house"></i><span>HOME</span></a>
+        <a href="#thongtin" class="nav-item"><i class="fa-solid fa-book-open"></i><span>THÔNG TIN CẦN CUNG</span></a>
+        <a href="#hinhthuc" class="nav-item"><i class="fa-solid fa-list-check"></i><span>CÁC HÌNH THỨC LUẬN GIẢI</span></a>
+        <a href="#lienhe" class="nav-item"><i class="fa-solid fa-envelope"></i><span>LIÊN HỆ</span></a>
+    </nav>
+
+    <!-- File JavaScript -->
+    <script src="tuvi.js"></script>
+</body>
+</html>
